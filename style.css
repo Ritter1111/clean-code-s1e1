@@ -13,11 +13,11 @@
   text-align: right;
 }
 
-.img-matrix {
+.matrix__img {
   width: 100%;
 }
 
-.matrix .more-info {
+.matrix .matrix__info {
   font-family: fantasy, cursive;
 }
 
@@ -41,7 +41,7 @@
   flex-grow: 1;
 }
 
-.task-wrapper {
+.items__wrapper {
   display: flex;
 }
 
@@ -60,7 +60,7 @@ button{
   outline: none;
 }
 
-.todo-btn {
+.items__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -70,14 +70,14 @@ button{
   cursor: pointer;
 }
 
-.todo-btn:hover {
+.items__btn:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
 
-.title-task,
-.label-task {
+.items__title,
+.items__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,7 +87,7 @@ button{
   text-transform: uppercase;
 }
 
-.text-input {
+.items__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -100,80 +100,79 @@ button{
   color: #888;
 }
 
-.text-input:focus {
+.items__input:focus {
   color: #333;
 }
 
 /* New Task */
 
-.label-task {
+.items__label {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.new__task {
     width: 318px;
 }
 
 /* Task list */
 
-.list {
+.items__list {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.list > * {
+.items__list > * {
   vertical-align: middle;
 }
 
-.list .input-list {
+.items__list .items__list_chekbox {
   margin: 0 10px;
 }
 
-.list .label {
+.items__list .items__list_label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list .text-input {
+.items__list .items__input {
   width: 226px;
 }
 
-.delete .btn-delete {
+.delete .items__delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete .btn-delete:hover {
+.delete .items__delete:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-#completed-tasks .label {
+.items__completed .items__list_label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.list .text-input {
+.items__list .items__input {
   display: none;
 }
 
-.edit-mode .text-input {
+.edit-mode .items__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .label {
+.edit-mode .items__list_label {
   display: none;
 }
